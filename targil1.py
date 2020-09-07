@@ -17,8 +17,8 @@ Uri's comments:
 * Here is how your code looks reformatted:
 
 age = int(input("Enter your age: "))
-ageMonth = age * 12
-print("Your age in months is: ", ageMonth)
+age_months = age * 12
+print("Your age in months is: ", age_months)
 
 * In Python it's common to use variable names in lowercase. You can use "_" to separate between words.
   For example, use "age_month" instead of "ageMonth".
