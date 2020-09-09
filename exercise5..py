@@ -7,11 +7,31 @@ ageMonth = age * 12
 print("Your age in months is: ", ageMonth)
 
 """
+Uri's comments:
+==============
+
+* Very good! This code works.
+* In Python it's common to use variable names in lowercase. You can use "_" to separate between words.
+  For example, use "age_month" instead of "ageMonth".
+* You don't need 2 dots in your file names.
+  
+"""
+
+"""
 Exercise 2
 """
 age_month = int(input("Enter your age in months: "))
 age = age_month / 12
 print("Your age is: ", age)
+
+"""
+Uri's comments:
+==============
+
+* Very good! This code works.
+* It's better to round the number of years, for example to 2 or 3 digits.
+
+"""
 
 """
 Exercise 3
@@ -22,11 +42,28 @@ if x % 7 == 0:
     print("Boom")
 
 """
+Uri's comments:
+==============
+
+* Very good! This code works.
+
+"""
+
+"""
 Exercise 4
 """
 x = (input("Choose a number: "))
 if '7' in x or int(x) % 7 == 0:
     print("Boom")
+
+"""
+Uri's comments:
+==============
+
+* Very good! This code works.
+
+"""
+
 
 """
 Exercise 5
@@ -37,9 +74,25 @@ z = int(input("Choose the third number: "))
 print("The max num you choose is: ", max(x, y, z))
 
 """
+Uri's comments:
+==============
+
+* Very good! This code works.
+
+"""
+
+"""
 Exercise 6
 """
 a = int(input("Choose the first number in the series: "))
 d = int(input("Choose the series difference: "))
 n = int(input("Choose the number of organs in the series: "))
 print("The sum of the series is: ", n * ((2 * a) + (d * (n - 1))) / 2)
+
+"""
+Uri's comments:
+==============
+
+* Very good! This code works.
+
+"""
