@@ -14,6 +14,14 @@ Exercise 1
 # print("--- The max number is: ", max_n)
 
 """
+Uri's comments:
+==============
+
+* Why did you comment this exercise?
+
+"""
+
+"""
 Exercise 2
 """
 
@@ -24,6 +32,17 @@ while True:
         break
     except ValueError:
         age = print("Sorry - you typed something that wasn't a number")
+
+"""
+Uri's comments:
+==============
+
+* Very good! This code works.
+* print doesn't return a value so there is no sense in assigning its return value
+  into a variable.
+  PyCharm warns about it.
+
+"""
 
 """
 Exercise 3
@@ -39,6 +58,18 @@ for i in range(len(lines)):
     print(lines[i])
 
 """
+Uri's comments:
+==============
+
+* Very good! This code works.
+* You don't need i in the for loop. You can do just:
+
+for line in lines:
+    print(line)
+
+"""
+
+"""
 Exercise 4
 """
 while True:
@@ -46,6 +77,14 @@ while True:
     if x % 13 == 0 and x % 15 == 0 and x % 7 == 0:
         print(x)
         break
+
+"""
+Uri's comments:
+==============
+
+* Very good! This code works.
+
+"""
 
 """
 Exercise 5
@@ -57,6 +96,17 @@ minD = max(x, y)
 while not ((minD % x == 0) and (minD % y == 0)):
     minD += 1
 print(f"The smallest multiplier of {x} and {y} is  {minD}")
+
+"""
+Uri's comments:
+==============
+
+* Very good! This code works.
+* Just a note - this works for numbers <= 10, but if the numbers would be
+  bigger (~6 digits or more), then this algorithm is very unefficient,
+  and there are algorithms which are much more efficient.
+
+"""
 
 """
 Exercise 6
@@ -71,3 +121,11 @@ while y != x:
         print("Too small")
     y = int(input("Enter a new guess: "))
 print("--- You succeeded")
+
+"""
+Uri's comments:
+==============
+
+* Very good! This code works.
+
+"""
