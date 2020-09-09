@@ -3,8 +3,8 @@ Exercise 1
 """
 
 age = int(input("Enter your age: "))
-ageMonth = age * 12
-print("Your age in months is: ", ageMonth)
+age_month = age * 12
+print("Your age in months is: ", age_month)
 
 """
 Exercise 2

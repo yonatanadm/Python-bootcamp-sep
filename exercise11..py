@@ -4,14 +4,14 @@ from random import randint
 Exercise 1
 """
 
-# x = int(input("Choose number 1: "))
-# max_n = x
-# for i in range(2, 11):
-#     y = int(input(f"Choose number {i}: "))
-#     if y > max_n:
-#         max_n = y
-#
-# print("--- The max number is: ", max_n)
+x = int(input("Choose number 1: "))
+max_n = x
+for i in range(2, 11):
+    y = int(input(f"Choose number {i}: "))
+    if y > max_n:
+        max_n = y
+
+print("--- The max number is: ", max_n)
 
 """
 Exercise 2
@@ -23,7 +23,7 @@ while True:
         print(f" Your age in months is:  {age * 12}")
         break
     except ValueError:
-        age = print("Sorry - you typed something that wasn't a number")
+       print("Sorry - you typed something that wasn't a number")
 
 """
 Exercise 3
@@ -35,8 +35,8 @@ while True:
         break
     lines.append(line)
 lines.reverse()
-for i in range(len(lines)):
-    print(lines[i])
+for l in lines:
+    print(l)
 
 """
 Exercise 4
