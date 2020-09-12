@@ -20,7 +20,6 @@ Exercise 2
 """
 
 import sys
-
 grades = tuple(map(int, sys.argv[1::]))
 avg = (sum(grades) / len(grades))
 final_grades = []
