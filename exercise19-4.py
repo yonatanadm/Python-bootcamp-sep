@@ -6,12 +6,10 @@ def check(s1, s2):
 
 
 words = []
-flag = 0
 with open('files/anagrams.txt', 'r', encoding='UTF-8') as f:
     for line in f:
         words.append(line.replace('\n', ''))
 size = len(words)
-
 for i in range(size):
     if '' == words[i]:
         continue
