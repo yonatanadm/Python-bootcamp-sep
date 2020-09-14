@@ -6,7 +6,7 @@ if len(sys.argv) == 1:
 hosts = tuple(sys.argv[1::])
 hosts_ne = []
 map = {}
-with open('files/host.txt', 'r', encoding='UTF-8') as f:
+with open('../files/host.txt', 'r', encoding='UTF-8') as f:
     for line in f:
         (host_name, ip) = line.split("=")
         map[host_name] = ip

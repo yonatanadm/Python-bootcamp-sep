@@ -6,7 +6,7 @@ def check(s1, s2):
 
 
 words = []
-with open('files/anagrams.txt', 'r', encoding='UTF-8') as f:
+with open('../files/anagrams.txt', 'r', encoding='UTF-8') as f:
     for line in f:
         words.append(line.replace('\n', ''))
 size = len(words)
