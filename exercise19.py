@@ -20,6 +20,10 @@ Exercise 2
 """
 
 import sys
+
+if len(sys.argv) == 1:
+    print("You need to pass a list of grades through the command line")
+    exit(1)
 grades = tuple(map(int, sys.argv[1::]))
 avg = (sum(grades) / len(grades))
 final_grades = []
@@ -31,6 +35,9 @@ print(final_grades)
 """
 Exercise 3
 """
+if len(sys.argv) == 1:
+    print("You need to pass at least one computer name through the command line")
+    exit(1)
 hosts = tuple(sys.argv[1::])
 hosts_ne = []
 map = {}
@@ -58,7 +65,7 @@ def check(s1, s2):
 
 words = []
 flag = 0
-with open('host.txt', 'r', encoding='UTF-8') as f:
+with open('anagrams.txt', 'r', encoding='UTF-8') as f:
     for line in f:
         words.append(line)
 size = len(words)
