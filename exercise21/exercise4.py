@@ -37,9 +37,12 @@ commands = {
 
 }
 clerks = {}
-input_user = str(input())
-command = input_user.split(' ')
-while command[0] in commands:
-    commands[command[0]](command, clerks)
+
+while True:
     input_user = str(input())
     command = input_user.split(' ')
+    if command[0] in commands.keys():
+        commands[command[0]](command, clerks)
+        print("yes")
+    else:
+        break
