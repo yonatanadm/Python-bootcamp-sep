@@ -43,6 +43,5 @@ while True:
     command = input_user.split(' ')
     if command[0] in commands.keys():
         commands[command[0]](command, clerks)
-        print("yes")
     else:
         break
