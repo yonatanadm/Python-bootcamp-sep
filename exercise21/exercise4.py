@@ -1,50 +1,45 @@
-import queue
-
-
 class Clerk:
 
     def __init__(self, name):
         self.name = name
-        self.queue = []
+        self.clerk = []
 
-    def add_to_queue(self, customer):
-        self.queue.append(customer)
+    def add_to_clerk(self, customer):
+        self.clerk.append(customer)
 
-    def remove_form_queue(self):
-        customer = self.queue[0]
+    def remove_form_clerk(self):
+        customer = self.clerk[0]
         print(customer)
-        self.queue.pop(0)
+        self.clerk.pop(0)
 
 
-flag = False
-free_clerk = False
-clerks = []
+def wait(input_c, clerks_d):
+    if input_c[1] in clerks_d:
+        clerks_d.get(input_c[1]).add_to_clerk(input_c[2])
+    else:
+        clerks_d[input_c[1]] = Clerk(input_c[1])
+        clerks_d[input_c[1]].add_to_clerk(input_c[2])
+
+
+def next_c(input_c, clerks_d):
+    if len(clerks_d.get(input_c[1]).clerk) > 0:
+        clerks_d.get(input_c[1]).remove_form_clerk()
+    else:
+        for c in clerks_d.values():
+            if len(c.clerk) > 0:
+                c.remove_form_clerk()
+                break
+
+
+commands = {
+    "wait": wait,
+    "next": next_c,
+
+}
+clerks = {}
 input_user = str(input())
 command = input_user.split(' ')
-while command[0] == 'wait' or command[0] == 'next':
-    if command[0] == 'wait':
-        for clerk in clerks:
-            if command[1] == clerk.name:
-                clerk.add_to_queue(command[2])
-                flag = True
-                break
-        if not flag:
-            clerks.append(Clerk(command[1]))
-            clerks[len(clerks) - 1].add_to_queue(command[2])
-        flag = False
-    else:
-        for clerk in clerks:
-            if command[1] == clerk.name:
-                if len(clerk.queue) != 0:
-                    clerk.remove_form_queue()
-                    break
-                else:
-                    free_clerk = True
-        if free_clerk:
-            for clerk in clerks:
-                if len(clerk.queue) > 0:
-                    clerk.remove_form_queue()
-                    break
-        free_clerk = False
+while command[0] in commands:
+    commands[command[0]](command, clerks)
     input_user = str(input())
     command = input_user.split(' ')
