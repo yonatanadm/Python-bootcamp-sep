@@ -48,4 +48,3 @@ while command[0] == 'wait' or command[0] == 'next':
         free_clerk = False
     input_user = str(input())
     command = input_user.split(' ')
-print("byeee")
