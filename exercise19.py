@@ -16,6 +16,15 @@ else:
     print("INTRUDER ALERT")
 
 """
+Uri's comments:
+==============
+
+* Very good! This code works.
+* It's better to separate each exercise to a separate file.
+
+"""
+
+"""
 Exercise 2
 """
 
@@ -31,6 +40,14 @@ for grade in grades:
     if grade > avg:
         final_grades.append(grade)
 print(final_grades)
+
+"""
+Uri's comments:
+==============
+
+* Very good! This code works.
+
+"""
 
 """
 Exercise 3
@@ -50,6 +67,15 @@ for name in hosts:
         print(f"The ip of {name} is: {map.get(name)}", end='')
     else:
         print(f"The host {name} does not exist")
+
+"""
+Uri's comments:
+==============
+
+* Very good! This code works.
+* It's better to put the data files (*.txt files) in a separate folder.
+
+"""
 
 """
 Exercise 4
@@ -80,3 +106,11 @@ for i in range(size):
             print(words[j], end='')
             words[j] = ''
     print(words[i])
+
+"""
+Uri's comments:
+==============
+
+* The output is not what the assignment expects.
+
+"""
