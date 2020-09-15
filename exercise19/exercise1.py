@@ -10,3 +10,11 @@ if (name, password) in login.items():
     print("Welcome Master")
 else:
     print("INTRUDER ALERT")
+
+"""
+Uri's comments:
+==============
+
+* Very good! This code works.
+
+"""

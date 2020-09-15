@@ -20,3 +20,11 @@ for i in range(size):
             print(words[j], end=' ')
             words[j] = ''
     print(words[i])
+
+"""
+Uri's comments:
+==============
+
+* Very good! This code works.
+
+"""
