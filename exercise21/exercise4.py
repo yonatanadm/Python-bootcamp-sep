@@ -45,3 +45,13 @@ while True:
         commands[command[0]](command, clerks)
     else:
         break
+
+"""
+Uri's comments:
+==============
+
+* Very good! This code works.
+* When you ask for an input, write something because the user doesn't know
+  it's an input.
+
+"""

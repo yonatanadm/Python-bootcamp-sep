@@ -13,3 +13,16 @@ for _ in range(10):
 
     # should print 10
 print(MyCounter.count)
+
+"""
+Uri's comments:
+==============
+
+* Very good! This code works.
+* Line 14: When you start a comment, it's better to use the same indentation as the following
+  line, or the line before - the line the comment is about:
+
+# should print 10
+print(MyCounter.count)
+
+"""

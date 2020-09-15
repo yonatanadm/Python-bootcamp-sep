@@ -35,3 +35,20 @@ _all.add_dependency(luke, hansolo, leia, yoda, padme, anakin, obi, darth)
 _all.build()
 # code should print: Han Solo, Padme Amidala, Anakin Skywalker, Leia, Yoda, Luke, Obi-Wan, Darth Vader
 # (can print with newlines in between modules)
+
+"""
+Uri's comments:
+==============
+
+* I tried to run your code, but I got this exception:
+
+Traceback (most recent call last):
+  File ".../yonatanadm___python-bootcamp-september-2020/exercise21/exercise3.py", line 35, in <module>
+    _all.build()
+  File ".../yonatanadm___python-bootcamp-september-2020/exercise21/exercise3.py", line 14, in build
+    if not d.built:
+AttributeError: 'Widget' object has no attribute 'built'
+
+It's better to always run your code locally before you commit.
+
+"""
