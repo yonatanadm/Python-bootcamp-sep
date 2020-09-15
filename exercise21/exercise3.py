@@ -11,7 +11,7 @@ class Widget:
     def build(self):
         self.flag = True
         for d in self._dependencies:
-            if not d.built:
+            if not d.flag:
                 d.build()
                 print(d.name)
 
