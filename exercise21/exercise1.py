@@ -22,3 +22,11 @@ s.print_total()
 
 # should print 50
 t.print_total()
+
+"""
+Uri's comments:
+==============
+
+* Very good! This code works.
+
+"""

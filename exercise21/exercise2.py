@@ -13,3 +13,11 @@ for _ in range(10):
 
 
 print(MyCounter.count)
+
+"""
+Uri's comments:
+==============
+
+* Very good! This code works.
+
+"""

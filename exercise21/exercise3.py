@@ -35,3 +35,22 @@ _all.add_dependency(luke, hansolo, leia, yoda, padme, anakin, obi, darth)
 _all.build()
 # code should print: Han Solo, Padme Amidala, Anakin Skywalker, Leia, Yoda, Luke, Obi-Wan, Darth Vader
 # (can print with newlines in between modules)
+
+"""
+Uri's comments:
+==============
+
+* Very good! This code works.
+* Notice that add_dependency() may be called more than once on the same object,
+  therefore you should add the dependencies and not replace them.
+* `def __init__(self, name):` there is no need for an empty line above it
+  and below `class Widget:`.
+* It might be useful to define the __str__ method in class Widget.
+  This method is used when converting the object to a string 
+  (for example by `print(luke)`).
+  For example:
+  
+    def __str__(self):
+        return str(self.name)
+
+"""
